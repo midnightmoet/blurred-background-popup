@@ -1,4 +1,45 @@
 body {
     margin: 0;
-    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    background: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+    background: blue;
+    color: white;
+    transition: 0.5s;
+}
+
+.active.container {
+    filter: blur(5px) brightness(0.7);
 }
