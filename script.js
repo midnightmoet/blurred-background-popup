@@ -1,15 +1,17 @@
-const containerElement = document.querySelector('.container');
-const buttonElement = document.querySelector('.btn');
-const popupContainerElement = document.querySelector('.popup-container');
-const closeElement = document.querySelector('.close');
+const containerEl = document.querySelector(".container");
 
-buttonElement.addEventListener('click', () => {
-    containerElement.classList.add("active");
-    popupContainerElement.classList.remove("active");
+const btnEl = document.querySelector(".btn");
+
+const popupContainerEl = document.querySelector(".popup-container");
+
+const closeIconEl = document.querySelector(".close-icon");
+
+btnEl.addEventListener("click", () => {
+  containerEl.classList.add("active");
+  popupContainerEl.classList.remove("active");
 });
 
-closeElement.addEventListener('click', () => {
-    containerElement.classList.remove("active");
-    popupContainerElement.classList.add("active");
-    buttonElement.classList.add("active");
+closeIconEl.addEventListener("click", () => {
+  containerEl.classList.remove("active");
+  popupContainerEl.classList.add("active");
 });
